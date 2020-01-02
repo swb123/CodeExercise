@@ -19,6 +19,7 @@ public class TreeNode {
             return (1 << (h -1) + bs(node.right, l + 1,h));
         } else {
             return (1 << (h - l - 1) + bs(node.left, l + 1, h));
+
         }
     }
     public int mostLeftLevel(Node node, int level) {
